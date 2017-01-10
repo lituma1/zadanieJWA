@@ -1,0 +1,22 @@
+{% extends "::base.html.twig" %}
+
+
+
+
+
+{% block body %}
+<h1>Zadanie z JWA</h1>
+
+<p>Po zalogowaniu</p>
+    
+{% for link in links %}
+    <a href="{{path(link.href)}}">{{link.text}}</a>
+    <br>
+    <br>
+    
+    
+    
+{%endfor%}
+
+
+{% endblock %}
