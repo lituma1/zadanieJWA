@@ -1,11 +1,11 @@
 {% extends "::base.html.twig" %}
 
-
+{% block title %}Zadanie JWA{% endblock %}
 
 
 
 {% block body %}
-    <h1>Zadanie z JWA</h1>
+
 
     <p><b>poprzednie logowanie:</b> 
         {% if log == null %}
@@ -20,9 +20,5 @@
         <br>
         <br>
 
-
-
     {%endfor%}
-
-
 {% endblock %}
