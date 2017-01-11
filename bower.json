@@ -1,0 +1,22 @@
+{
+  "name": "projekt_zadanie",
+  "homepage": "https://github.com/lituma1/zadanieJWA",
+  "authors": [
+    "Piotr Popkiewicz <lituma1@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
