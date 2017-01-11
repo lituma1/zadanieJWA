@@ -33,7 +33,6 @@ class MainController extends Controller {
         
         $repo = $this->getDoctrine()->getRepository('MyTaskBundle:Log');
         $logBeforeLast = $repo->findOneById($idBeforeLast);
-        
 
         return $this->render('MyTaskBundle:Main:show_main_page_1.html.twig', array(
                     'links' => $link, 'log' => $logBeforeLast
