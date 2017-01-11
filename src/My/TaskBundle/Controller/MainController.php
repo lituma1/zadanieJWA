@@ -20,10 +20,10 @@ class MainController extends Controller {
         $linkOut['text'] = 'Wyloguj';
         $link[] = $linkOut;
         $repo = $this->getDoctrine()->getRepository('MyTaskBundle:Log');
-            $logBeforeLast = $repo->findOneById($id);
+        $logBeforeLast = $repo->findOneById($id);
 
-        
-        
+
+
 
         return $this->render('MyTaskBundle:Main:show_main_page_1.html.twig', array(
                     'links' => $link, 'log' => $logBeforeLast
@@ -48,7 +48,7 @@ class MainController extends Controller {
             $id = $log->getId();
             $idBeforeLast = $id - 1;
 
-            
+
             return $this->redirectToRoute('Panel', array('id' => $idBeforeLast));
         }
 
