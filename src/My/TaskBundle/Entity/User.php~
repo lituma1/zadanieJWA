@@ -42,37 +42,4 @@ class User extends BaseUser {
         parent::__construct();
     }
 
-
-    /**
-     * Add logs
-     *
-     * @param \My\TaskBundle\Entity\Log $logs
-     * @return User
-     */
-    public function addLog(\My\TaskBundle\Entity\Log $logs)
-    {
-        $this->logs[] = $logs;
-
-        return $this;
-    }
-
-    /**
-     * Remove logs
-     *
-     * @param \My\TaskBundle\Entity\Log $logs
-     */
-    public function removeLog(\My\TaskBundle\Entity\Log $logs)
-    {
-        $this->logs->removeElement($logs);
-    }
-
-    /**
-     * Get logs
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getLogs()
-    {
-        return $this->logs;
-    }
 }

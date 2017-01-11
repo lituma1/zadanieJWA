@@ -8,7 +8,7 @@
 <h1>Zadanie z JWA</h1>
 
 <p>Po zalogowaniu</p>
-    
+<p>poprzednie logowanie {{log.loginTime|date('Y-m-d H:i:s')}} </p>
 {% for link in links %}
     <a href="{{path(link.href)}}">{{link.text}}</a>
     <br>
